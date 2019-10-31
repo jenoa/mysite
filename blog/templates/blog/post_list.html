@@ -1,7 +1,5 @@
 <html>
-    <p>Hello!</p>
-    <p>It works!</p>
-
+  
     {% extends 'blog/base.html' %}
 
     {% block content %}
@@ -18,7 +16,7 @@
     <div>
         <h1><a href="/">My Blog</a></h1>
     </div>
-    
+
     {% for post in posts %}
         <div>
             <p>published: {{ post.published_date }}</p>
